@@ -30,12 +30,12 @@ var board =[
             [0,0,0,0],
             [0,0,0,0]
             ];
-            var board =[
-                [4,4,8,2],
-                [8,16,64,16],
-                [4,8,16,8],
-                [2,4,2,2]
-                ];
+            // var board =[
+            //     [4,4,8,2],
+            //     [8,16,64,16],
+            //     [4,8,16,8],
+            //     [2,4,2,2]
+            //     ];
 //tile is the current state of game board
 tile = addNumbers(board)
 
@@ -51,7 +51,8 @@ function printArr(board){
 
 for(var i= 0 ; i < 4 ;i++){
     
-        console.log(""+board[i][0]+" "+board[i][1]+" "+board[i][2]+" "+board[i][3]+" ");   
+        console.log(""+board[i][0]+" "+board[i][1]+" "+board[i][2]+" "+board[i][3]+" ");  
+        console.log("--------"); 
                         }
 }
         // printArr(board); //checking output for a given grid
@@ -85,12 +86,13 @@ function addNumbers(){
         // printArr(board);
         // console.log(options);
         
-        if (options.length==0){
+    
+    if (options.length==0){
             // add to check if no adjacent cells are same.. and then exit
             console.log("GAME OVER, BOSS!");
             process.exit();
         }
-
+    
 
 
         if (options.length>=16){
